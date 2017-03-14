@@ -28,39 +28,24 @@ nunjucksEnv.addExtension('includeWith', new IncludeWithNunjucksExtension({
 {% includeWith "../partial.tpl", { name: 'Test' } %}
 ```
 
-## Extension API
+## Extension Options
 
 ### IncludeWithNunjucksExtension({Object})
 
-Create a Nunjucks include with. Available options:
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| nunjucksEnv | `Environment` |  | Instance of Nunjucks environment. https://mozilla.github.io/nunjucks/api.html#environment |
+| tagName | `String` | `includeWith` | Name for the tag in the template. |
 
-##### **{Environment}** nunjucksEnv
-Instance of Nunjucks environment.
-Docs: https://mozilla.github.io/nunjucks/api.html#environment
-
-##### **{String}** [tagName]
-Default: `includeWith`
-
-Name for the tag in the template.
-
-## Template API
+## Template Options
 
 ### {% includeWith {String}, {Object}, {Object} %}
 
-Create a Nunjucks include with. Available options:
-
-##### **{String}** templatePath
-Path of the included template.
-
-##### **{Object}** [data]
-Default: `{}`
-
-Object with the data for the included template.
-
-##### **{Object}** [options]
-Default: `{ useContext = true }`
-
-Option to include the global context.
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| templatePath | `String` |  | Path of the included template. |
+| data | `Object` | `{}` | Object with the data for the included template. |
+| options | `Object` | `{ useContext = true }` | Option to include the global context. |
 
 
 ## Contribute
