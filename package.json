@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-include-with",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Jordi López <jordi.lopez@softonic.com>",
   "description": "Include with nunjucks extension",
   "license": "Apache-2.0",
