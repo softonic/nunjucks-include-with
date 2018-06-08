@@ -45,6 +45,6 @@
     "url": "https://github.com/softonic/nunjucks-include-with/issues"
   },
   "dependencies": {
-    "nunjucks": "^3.0.0"
+    "nunjucks": "3.0.0"
   }
 }
